@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero-section{
+    background-size: cover;
+    height: 380px;
+    box-shadow: 20px 20px 10px gray;
+    animation: Slider 20s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+@keyframes Slider {
+    0%{
+        background-image: url("images/hero_image.jpg");
+    }
+    15%{
+        background-image: url("images/one.jpg");
+    }
+    30%{
+        background-image: url("images/two.jpg");
+    }
+    45%{
+        background-image: url("images/three.jpg");
+    }
+    60%{
+        background-image: url("images/four.jpg");
+    }
+    75%{
+        background-image: url("images/five.jpg");
+    }
+    100%{
+        background-image: url("images/hero_image.jpg");
+    }
+    
+}

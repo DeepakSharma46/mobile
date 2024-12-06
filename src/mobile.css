@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mobileContainer{
+    display: flex;
+    padding: 15px;
+    /* border: 2px solid; */
+    justify-content: space-around;
+    background-color: lightgray;
+    width: 1200px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px grey
+}
+
+.imgContainer{
+    border-radius: 10px;
+    background-color: lightgrey;
+    overflow: hidden;
+    padding: 10px;
+    /* box-shadow: 10px 10px 10px grey */
+
+}
+.imgContainer>img{
+    height: 100%;
+    border-radius: 15px;
+}
+.detailsContainer{
+    align-content: center;
+}
+.productTitle{
+    font-size: 25px;
+    font-weight: bold;
+    width: 500px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 110px;
+}
+.productTitle:hover{
+    text-decoration: underline;
+    color: darkcyan;
+}
+.specification>li{
+    list-style: none;
+    padding-left: 15px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.priceContainer{
+    width: 200px;
+    padding: 15px 15px;
+        .price{
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        img{
+            height: 30px;
+            width: 130px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .free{
+            font-weight: bold;
+            color: darkgray;
+        }
+        .wishlist{
+            /* background-color: yellow; */
+            height: 50px;
+            margin-top: 20px;
+
+            button{
+                height: 100%;
+                width: 100%;
+                font-weight: bold;
+                background-color: goldenrod;
+                font-size: 15px;
+                font-family: cursive;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                transition: all 0.5s ease-in-out;
+                box-shadow: 5px 5px 5px grey
+            }
+            button:hover{
+                background-color: palevioletred;
+                letter-spacing: 3px;
+            }
+        }
+        
+}
+
+.wishpopUp{
+    height: 105px;
+    width:500px;
+    background-color: lightyellow;
+    color: darkslategrey;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+
+    span{
+        color: darkcyan;
+    }
+
+    
+}
+
+.closePop{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    right: 10px;
+    border-radius: 5px;
+    button{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    button:hover{
+        color: white;
+        background-color: goldenrod;
+        font-weight: bold;
+    }
+}
